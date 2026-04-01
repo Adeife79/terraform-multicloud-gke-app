@@ -1,0 +1,23 @@
+{
+  "name": "google_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adeife79/terraform-multicloud-gke-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Adeife79/terraform-multicloud-gke-app/issues"
+  },
+  "homepage": "https://github.com/Adeife79/terraform-multicloud-gke-app#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

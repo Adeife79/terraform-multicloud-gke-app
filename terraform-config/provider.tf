@@ -11,18 +11,19 @@ terraform {
     }
 
     backend "s3" {
-        bucket = "gcp-demo-terraform-state-bucket"
+        bucket = "gcp-demo-terraform-bucket"
         key = "gcp/infrastructure.tfstate"
-        region = "us-east-1"
+        region = "eu-north-1"
+        encrypt = true
     }
 }
 
 provider "aws" {
-    region = "us-east-1"
+    region = "eu-north-1"
 }
 
 provider "google" {
-    project = var.project_id
+    project = "distributed-map-491814-n3"
     region = var.region
-  #  credentials = "key.json"
+    #credentials = "key.json"
 }

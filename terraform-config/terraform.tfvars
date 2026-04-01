@@ -1,3 +1,2 @@
-region = "us-central1"
-zone = "us-central1-a"
-project_id = "distributed-map-491814-n3"
+region = "us-west1"
+zone = "us-west1-b"

@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "gke-app"
+  namespace: "default"
+  labels:
+    app: "gke-app"
+spec:
+  replicas: 3
+  selector: 
+    matchLabels:
+      app: "gke-app"
+  template: 
+    metadata: 
+      labels:
+        app: gke-app
+    spec: 
+      containers:
+        - name: gke-app
+          image: adeife08/gke-app:v1
+          ports: 
+          - containerPort: 8087
+    
